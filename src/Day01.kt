@@ -27,7 +27,7 @@ fun main() {
     increases = 0
     i = 0
 
-    while (i < part2(input) - 3 ) {
+    while (i < part2(input) - 3) {
         val sum1 = intInput[i] + intInput[i + 1] + intInput[i + 2]
         val sum2 = intInput[i + 1] + intInput[i + 2] + intInput [i + 3]
             if (sum2 > sum1) {
