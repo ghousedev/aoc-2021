@@ -99,10 +99,10 @@ fun main() {
                                 winnerList.add(playerIndex)
                                 // First winner for part 1
                                 if (winnerList.size == 1) {
-                                    println(currentGame.players[playerIndex]) // Winning board
-                                    println("First winner score: " +          // Winning score
+                                    println(currentGame.players[winnerList.first()]) // Winning board
+                                    println("First winner score: " +                 // Winning score
                                         calculateScore(
-                                            currentGame.players[playerIndex],
+                                            currentGame.players[winnerList.first()],
                                             currentGame.numbers[numberIndex]
                                         )
                                     )
